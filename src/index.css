@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CSS Variables for Theme System */
+:root {
+  --primary-color: #f97316;
+  --primary-hover: #ea580c;
+  --primary-light: #fb923c;
+  --secondary-color: #f59e0b;
+  --bg-primary: #0f172a;
+  --bg-secondary: #1e293b;
+  --bg-tertiary: #334155;
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
+  --border-color: #475569;
+  --card-bg: #1e293b;
+  --gradient-primary: linear-gradient(135deg, #f97316, #fb923c);
+  --gradient-secondary: linear-gradient(135deg, #ea580c, #f97316);
+  
+  /* Transition for theme changes */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+[data-theme="light"] {
+  --primary-color: #2563eb;
+  --primary-hover: #1d4ed8;
+  --primary-light: #3b82f6;
+  --secondary-color: #7c3aed;
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8fafc;
+  --bg-tertiary: #f1f5f9;
+  --text-primary: #1e293b;
+  --text-secondary: #475569;
+  --text-muted: #64748b;
+  --border-color: #e2e8f0;
+  --card-bg: #ffffff;
+  --gradient-primary: linear-gradient(135deg, #2563eb, #3b82f6);
+  --gradient-secondary: linear-gradient(135deg, #1d4ed8, #2563eb);
+  
+  /* Ensure proper color inheritance */
+  color: var(--text-primary);
+}
+
+/* Force color updates for all elements */
+[data-theme="light"] * {
+  color: inherit;
+}
+
+/* Specific overrides for elements that need explicit colors */
+[data-theme="light"] body {
+  color: var(--text-primary);
+  background: var(--bg-primary);
+}
+
+/* Global theme transitions */
+* {
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
