@@ -5,6 +5,13 @@ import { useTheme } from '../contexts/ThemeContext';
 const Home: React.FC = () => {
   const { effectiveTheme } = useTheme();
 
+  const base = import.meta.env.BASE_URL;
+  
+  const profileImageSrc =
+    effectiveTheme === 'dark'
+      ? `${base}b0rjen_dark.jpg`
+      : `${base}b0rjen_light.jpg`;
+
   const skills = [
     {
       icon: Code,
@@ -78,7 +85,7 @@ const Home: React.FC = () => {
           <div className="hero-image">
             <div className="image-container">
               <img
-                src={effectiveTheme === 'dark' ? '/b0rjen_dark.jpg' : '/b0rjen_light.jpg'}
+                src={profileImageSrc}
                 alt="Desarrollador | Data Analyst y Machine Learning | Inteligencia Artificial | Python"
                 className="profile-image"
                 loading="lazy"
