@@ -46,27 +46,27 @@ const Home: React.FC = () => {
             <div className="hero-badge">
               <span>Programador</span>
             </div>
-            
+
             <div className="hero-badge">
               <span>Freelancer</span>
             </div>
-            
+
             <h1 className="hero-title">
-              <span className="gradient-text">La inteligencia no necesita dejar de ser humana...</span>
+              <span className="gradient-text">La inteligencia no necesita dejar de ser humana</span>
             </h1>
-            
+
             <p className="hero-description">
               ¡Hola, mundo! Soy <strong>Borja</strong>, y ayudo a las empresas a desarrollar herramientas para tomar decisiones, basadas en datos que no solo hacen crecer el negocio, sino que lo hacen de forma sostenible, cercana y ante todo, ética.
             </p>
 
             <div className="hero-actions">
-              <button 
+              <button
                 onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
                 className="cta-button primary"
               >
                 Ver Proyectos
               </button>
-              <button 
+              <button
                 onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
                 className="cta-button secondary"
               >
@@ -78,8 +78,8 @@ const Home: React.FC = () => {
           <div className="hero-image">
             <div className="image-container">
               <img
-                src={effectiveTheme === 'dark' ? '/src/assets/b0rjen_dark.jpg' : '/src/assets/b0rjen_light.jpg'}
-                alt="Desarrollador especialista en análisis de datos y machine learning trabajando con Python"
+                src={effectiveTheme === 'dark' ? '/b0rjen_dark.jpg' : '/b0rjen_light.jpg'}
+                alt="Desarrollador | Data Analyst y Machine Learning | Inteligencia Artificial | Python"
                 className="profile-image"
                 loading="lazy"
               />
