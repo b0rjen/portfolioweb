@@ -5,12 +5,12 @@ const Projects: React.FC = () => {
   const projects = [
     {
       id: 1,
-      title: 'Sistema de Análisis Predictivo',
-      description: 'Plataforma de machine learning para predicción de tendencias de mercado usando Python, scikit-learn y análisis de series temporales.',
+      title: 'Sistema de Análisis Predictivo - Precio de vivienda',
+      description: 'Proyecto de data science desplegado con Streamlit, autohosteado, a partir de un dataset histórico de vivienda e indicadores económicos en España.',
       image: 'https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg?auto=compress&cs=tinysrgb&w=800',
-      tags: ['Python', 'Machine Learning', 'Pandas', 'Scikit-learn'],
+      tags: ['Python', 'Machine Learning', 'Pandas', 'Scikit-learn', 'Docker', 'Streamlit'],
       icon: TrendingUp,
-      demoUrl: 'https://github.com/b0rjen',
+      demoUrl: 'https://demo-vivienda.borjen.dev/',
       codeUrl: 'https://github.com/b0rjen',
       featured: true
     },
