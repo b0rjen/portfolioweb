@@ -240,7 +240,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, featured = false }) 
       <div className="project-image">
         <img
           src={image}
-          alt={`${title} - Proyecto de análisis de datos y machine learning`}
+          alt={`${title} - Vista previa del proyecto`}
           loading="lazy"
         />
         <div className="project-overlay">
@@ -249,6 +249,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, featured = false }) 
               href={demoUrl}
               className="action-button"
               aria-label={`Ver demo de ${title}`}
+              title={`Ver demo de ${title}`}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -258,6 +259,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, featured = false }) 
               href={codeUrl}
               className="action-button"
               aria-label={`Ver código de ${title}`}
+              title={`Ver código de ${title}`}
               target="_blank"
               rel="noopener noreferrer"
             >
