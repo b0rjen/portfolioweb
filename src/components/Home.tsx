@@ -1,5 +1,5 @@
 import React from 'react';
-import { Code, Database, Brain, TrendingUp, Zap, Shield } from 'lucide-react';
+import { Code, Database, Brain, TrendingUp, Zap, Wifi } from 'lucide-react';
 import { useTheme } from '../contexts/ThemeContext';
 
 const Home: React.FC = () => {
@@ -34,14 +34,14 @@ const Home: React.FC = () => {
       description: 'Transformación de datos complejos en insights accionables para la toma de decisiones.'
     },
     {
-      icon: Zap,
-      title: 'Automatización',
-      description: 'Desarrollo de pipelines automatizados y procesos ETL para optimizar workflows.'
+      icon: Database,
+      title: 'Big Data',
+      description: 'Arquitecturas de datos con HDFS, MinIO, Spark, DuckDB y Airflow. Diseño de pipelines Medallion (Bronze → Silver → Gold) y visualización con Superset.'
     },
     {
-      icon: Shield,
-      title: 'Consultoría IA',
-      description: 'Asesoramiento estratégico en implementación de soluciones de inteligencia artificial.'
+      icon: Wifi,
+      title: 'IoT & Edge',
+      description: 'Integración de dispositivos ESP32 con MQTT, Node-RED y plataformas de datos. Del sensor al dashboard pasando por procesamiento en tiempo real.'
     }
   ];
 
