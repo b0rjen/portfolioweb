@@ -101,6 +101,17 @@ const Projects: React.FC = () => {
       demoUrl: 'https://youtu.be/3pvAIzM2GtQ',
       codeUrl: 'https://colab.research.google.com/drive/1evAI0IYn_33K297V9OLt9IFJ1LaQB78m?usp=sharing',
       featured: true
+    },
+    {
+      id: 10,
+      title: 'Pipeline IoT Big Data — Arquitectura Medallion',
+      description: 'Arquitectura de datos extremo a extremo: desde un ESP32 con sensores ambientales hasta un dashboard analítico en Superset, pasando por MQTT, Node-RED, HDFS, MinIO (Bronze → Silver → Gold), Spark, DuckDB y orquestación con Airflow. Toda la infraestructura containerizada con Docker Compose.',
+      image: 'https://images.pexels.com/photos/1148820/pexels-photo-1148820.jpeg?auto=compress&cs=tinysrgb&w=800',
+      tags: ['IoT', 'Big Data', 'Airflow', 'Docker', 'Spark', 'Superset'],
+      icon: Database,
+      demoUrl: 'https://bda-finalboss.borjen.dev/',
+      codeUrl: 'https://github.com/b0rjen',
+      featured: true
     }
   ];
 
