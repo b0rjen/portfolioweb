@@ -90,6 +90,17 @@ const Projects: React.FC = () => {
       demoUrl: 'https://github.com/b0rjen',
       codeUrl: 'https://github.com/b0rjen',
       featured: false
+    },
+    {
+      id: 9,
+      title: 'Análisis de Noticias sobre IA — NLP + Deep Learning',
+      description: 'Pipeline de análisis automático de 50 noticias reales sobre inteligencia artificial en España y Europa. Combina clasificación zero-shot con XLM-RoBERTa (Hugging Face), NLP clásico (spaCy, TF-IDF), lógica difusa Mamdani y un sistema experto basado en reglas para generar un ranking de relevancia sobre IA.',
+      image: 'https://images.pexels.com/photos/518543/pexels-photo-518543.jpeg?auto=compress&cs=tinysrgb&w=800',
+      tags: ['NLP', 'Transformers', 'Zero-Shot', 'spaCy', 'Lógica Difusa', 'Python'],
+      icon: Brain,
+      demoUrl: 'https://youtu.be/3pvAIzM2GtQ',
+      codeUrl: 'https://colab.research.google.com/drive/1evAI0IYn_33K297V9OLt9IFJ1LaQB78m?usp=sharing',
+      featured: true
     }
   ];
 
