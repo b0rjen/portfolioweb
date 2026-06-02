@@ -1,5 +1,5 @@
 import React from 'react';
-import { Code, Database, Brain, TrendingUp, Zap, Wifi } from 'lucide-react';
+import { Code, Database, Brain, TrendingUp, Zap, Wifi, Palette } from 'lucide-react';
 import { useTheme } from '../contexts/ThemeContext';
 
 const Home: React.FC = () => {
@@ -42,6 +42,21 @@ const Home: React.FC = () => {
       icon: Wifi,
       title: 'IoT & Edge',
       description: 'Integración de dispositivos ESP32 con MQTT, Node-RED y plataformas de datos. Del sensor al dashboard pasando por procesamiento en tiempo real.'
+    },
+    {
+      icon: Zap,
+      title: 'Automatizaciones',
+      description: 'Diseño de flujos y procesos automáticos para reducir tareas repetitivas y acelerar operaciones.'
+    },
+    {
+      icon: Code,
+      title: 'Consultoría Tech',
+      description: 'Acompañamiento técnico para definir arquitectura, priorizar entregables y bajar la complejidad a decisiones concretas.'
+    },
+    {
+      icon: Palette,
+      title: 'Diseño',
+      description: 'Interfaz visual clara y coherente, con foco en jerarquía, legibilidad y experiencia de usuario.'
     }
   ];
 

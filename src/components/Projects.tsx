@@ -1,5 +1,5 @@
 import React from 'react';
-import { ExternalLink, Github, Database, Brain, TrendingUp, Zap, BarChart3, FileText } from 'lucide-react';
+import { ExternalLink, Github, Database, Brain, TrendingUp, Zap, BarChart3, FileText, Cloud } from 'lucide-react';
 
 const Projects: React.FC = () => {
   const projects = [
@@ -111,6 +111,17 @@ const Projects: React.FC = () => {
       icon: Database,
       demoUrl: 'https://bda-finalboss.borjen.dev/',
       codeUrl: 'https://github.com/b0rjen',
+      featured: true
+    },
+    {
+      id: 11,
+      title: 'WordCloud Interactivo — Scraping + NLP',
+      description: 'Aplicación full-stack que genera nubes de palabras a partir de una URL o de texto libre. El backend (FastAPI) extrae y limpia el contenido con BeautifulSoup, lo procesa con NLTK (tokenización y stopwords multiidioma) y calcula las frecuencias; el frontend en React renderiza una visualización interactiva y animada. Desplegada como contenedor Docker único servido por FastAPI detrás de Caddy.',
+      image: 'https://images.pexels.com/photos/6475821/pexels-photo-6475821.jpeg?cs=srgb&dl=pexels-brettjordan-6475821.jpg&fm=jpg',
+      tags: ['Web Scraping', 'NLP', 'FastAPI', 'React', 'Docker', 'NLTK'],
+      icon: Cloud,
+      demoUrl: 'https://demo-wordcloud.borjen.dev/',
+      codeUrl: 'https://github.com/b0rjen/wordcloud_portfolio',
       featured: true
     }
   ];
