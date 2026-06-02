@@ -187,7 +187,7 @@ const Contact: React.FC = () => {
             <div className="info-card">
               <h3>¿Hablamos?</h3>
               <p>
-                Como especialista en las técnicas modernas de análisis, aprendizaje automático e inteligencia artificial, estoy dispuesto a ayudarte. ¡Contáctame!
+                No tengo horario fijo, soy un freelance de manual, así que estoy dispuesto a ayudarte a (casi) cualquier hora :)
               </p>
             </div>
 

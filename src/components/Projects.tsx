@@ -126,7 +126,10 @@ const Projects: React.FC = () => {
     }
   ];
 
-  const featuredProjects = projects.filter(project => project.featured);
+  const featuredProjectOrder = [9, 10, 11, 1, 2];
+  const featuredProjects = featuredProjectOrder
+    .map(id => projects.find(project => project.id === id))
+    .filter((project): project is NonNullable<typeof project> => Boolean(project));
   const otherProjects = projects.filter(project => !project.featured);
 
   return (
@@ -134,7 +137,7 @@ const Projects: React.FC = () => {
       <div className="container">
         <div className="section-header">
           <h2 className="section-title">
-            Proyectos de <span className="gradient-text">Análisis de Datos</span> e IA
+            Proyectos <span className="gradient-text">ML, Data &amp; IA</span>
           </h2>
           <p className="section-description">
             Una selección de proyectos que demuestran mi experiencia en <strong>análisis de datos con Python</strong>, 
@@ -145,7 +148,7 @@ const Projects: React.FC = () => {
 
         {/* Featured Projects */}
         <div className="featured-projects">
-          <h3 className="subsection-title">Proyectos Destacados</h3>
+          <h3 className="subsection-title">Destacados</h3>
           <div className="featured-grid">
             {featuredProjects.map((project) => (
               <ProjectCard key={project.id} project={project} featured />
