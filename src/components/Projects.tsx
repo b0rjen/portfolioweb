@@ -1,5 +1,5 @@
 import React from 'react';
-import { ExternalLink, Github, Database, Brain, TrendingUp, Zap, BarChart3, FileText, Cloud } from 'lucide-react';
+import { ExternalLink, Github, Database, Brain, TrendingUp, Zap, BarChart3, FileText, Cloud, LineChart } from 'lucide-react';
 
 const Projects: React.FC = () => {
   const projects = [
@@ -23,6 +23,17 @@ const Projects: React.FC = () => {
       icon: BarChart3,
       demoUrl: 'https://github.com/b0rjen',
       codeUrl: 'https://github.com/b0rjen',
+      featured: true
+    },
+    {
+      id: 12,
+      title: 'CryptoBro — Dashboard BI de Criptomonedas',
+      description: 'Dashboard de inteligencia de mercado cripto en tiempo real. Backend FastAPI que consume la CoinCap API v3 y expone KPIs (market cap total, volumen 24h, cambio medio) y un histórico de precios. Frontend con Chart.js: ranking por precio, doughnut de dominancia por market cap, y serie temporal comparada BTC vs TRX con selector de rango (24h–90d) y normalización base 100. Desplegado como contenedor Docker único servido por FastAPI, autohospedado en Raspberry Pi detrás de Caddy/Tailscale.',
+      image: 'https://images.pexels.com/photos/27075258/pexels-photo-27075258.jpeg?auto=compress&cs=tinysrgb&w=800',
+      tags: ['FastAPI', 'CoinCap API', 'Chart.js', 'Data Viz', 'Docker', 'Python'],
+      icon: LineChart,
+      demoUrl: 'https://demo-cryptodashboard.borjen.dev/',
+      codeUrl: 'https://github.com/b0rjen/portfolio_cryptobro',
       featured: true
     },
     {
@@ -126,7 +137,7 @@ const Projects: React.FC = () => {
     }
   ];
 
-  const featuredProjectOrder = [9, 10, 11, 1, 2];
+  const featuredProjectOrder = [9, 10, 12, 11, 1, 2];
   const featuredProjects = featuredProjectOrder
     .map(id => projects.find(project => project.id === id))
     .filter((project): project is NonNullable<typeof project> => Boolean(project));
